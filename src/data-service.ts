@@ -140,7 +140,21 @@ export const dataService = {
     if (selected.length === 0) selected = matched.slice(0, 3)
     const equipNames = new Set(selected.map(m => m.name))
 
-    const filtered = aggData.filter(g => equipNames.has(g.e))
+    const allFiltered = aggData.filter(g => equipNames.has(g.e))
+
+    // 적응형 사례수 필터: 신뢰도 높은 결과 우선
+    // ≥5건 → ≥3건 → 전체 순으로 완화
+    let minCases = 5
+    let filtered = allFiltered.filter(g => g.n >= minCases)
+    if (filtered.length < 10) {
+      minCases = 3
+      filtered = allFiltered.filter(g => g.n >= minCases)
+    }
+    if (filtered.length < 10) {
+      minCases = 0
+      filtered = allFiltered
+    }
+
     filtered.sort((a, b) => b.s - a.s)
 
     const top10 = filtered.slice(0, 10).map((g, idx) => ({
@@ -156,7 +170,14 @@ export const dataService = {
       업종: g.j
     }))
 
-    return { keyword, matched_equipment: selected, total_filtered_groups: filtered.length, top10 }
+    return {
+      keyword,
+      matched_equipment: selected,
+      total_filtered_groups: allFiltered.length,
+      min_cases_filter: minCases,
+      filtered_groups: filtered.length,
+      top10
+    }
   },
 
   drilldown(equip: string, improve: string, action: string, limit: number = 40) {

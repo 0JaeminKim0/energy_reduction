@@ -230,7 +230,7 @@ export function getMainHTML(): string {
         // Step 2
         activateStep(2); await sleep(200);
         renderChips(data.matched_equipment);
-        renderTable(data.top10,data.total_filtered_groups);
+        renderTable(data.top10, data.total_filtered_groups, data.min_cases_filter, data.filtered_groups);
         doneStep(2);
 
         // Step 3
@@ -273,7 +273,7 @@ export function getMainHTML(): string {
       requestAnimationFrame(()=>{$('chips-section').style.opacity='1';$('chips-section').className='fade-in-up'});
     }
 
-    function renderTable(top10,total){
+    function renderTable(top10,total,minCases,filteredCount){
       const tbody=$('top10-body');
       tbody.innerHTML=top10.map(r=>{
         const rc=r.rank<=3?'rank-'+r.rank:'rank-default';
@@ -292,7 +292,14 @@ export function getMainHTML(): string {
           '<td class="text-right">'+r.CO2감축량_평균.toFixed(1)+'</td>'+
           '<td class="text-right num-positive text-base">'+r.절감액_평균.toFixed(1)+'</td></tr>'
       }).join('');
-      $('table-subtitle').textContent='총 '+total+'개 그룹 중 상위 10개 (키워드: "'+currentKeyword+'")';
+      // 적응형 사례수 필터 라벨 표시
+      let filterLabel='';
+      if(minCases>0){
+        filterLabel=' · <span class="inline-flex items-center gap-1 text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200"><i class="fas fa-filter text-[10px]"></i>사례 '+minCases+'건 이상만 표시 ('+filteredCount+'개 그룹)</span>';
+      } else {
+        filterLabel=' · <span class="inline-flex items-center gap-1 text-xs font-medium text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200"><i class="fas fa-exclamation-triangle text-[10px]"></i>사례수 필터 미적용 (데이터 부족)</span>';
+      }
+      $('table-subtitle').innerHTML='총 '+total+'개 그룹 중 상위 10개 (키워드: "'+currentKeyword+'")'+filterLabel;
       setTimeout(()=>{$('table-section').style.opacity='1';$('table-section').className='fade-in-up'},200);
     }
 
