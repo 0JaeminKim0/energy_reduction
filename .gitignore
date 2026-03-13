@@ -1,8 +1,11 @@
 node_modules/
-.wrangler/
 dist/
+.wrangler/
 .env
 .dev.vars
 *.pid
 *.log
 .pm2/
+core
+*.backup
+*.bak
