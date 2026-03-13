@@ -1,0 +1,259 @@
+{
+  "Air Compressor": [
+    "에어컴프레서",
+    "공기압축기",
+    "컴프레서",
+    "compressor"
+  ],
+  "Boiler": [
+    "보일러",
+    "boiler"
+  ],
+  "Pump": [
+    "펌프",
+    "pump"
+  ],
+  "Fan & Blower": [
+    "팬",
+    "블로워",
+    "fan",
+    "blower",
+    "송풍기"
+  ],
+  "Motor": [
+    "모터",
+    "전동기",
+    "motor"
+  ],
+  "Lighting": [
+    "조명",
+    "lighting",
+    "LED",
+    "등"
+  ],
+  "HVAC": [
+    "냉난방",
+    "공조",
+    "hvac",
+    "에어컨"
+  ],
+  "Heat Exchanger": [
+    "열교환기",
+    "열교환"
+  ],
+  "Chiller": [
+    "칠러",
+    "냉동기",
+    "chiller"
+  ],
+  "Cooling Tower": [
+    "냉각탑",
+    "cooling tower"
+  ],
+  "Transformer": [
+    "변압기",
+    "트랜스포머"
+  ],
+  "Steam Turbine": [
+    "스팀터빈",
+    "증기터빈"
+  ],
+  "Furnace": [
+    "로",
+    "가열로",
+    "furnace"
+  ],
+  "Dryer": [
+    "건조기",
+    "dryer"
+  ],
+  "Heat Pump": [
+    "히트펌프",
+    "열펌프"
+  ],
+  "Insulation": [
+    "단열",
+    "보온",
+    "insulation"
+  ],
+  "Kiln": [
+    "킬른",
+    "소성로",
+    "kiln"
+  ],
+  "Piping": [
+    "배관",
+    "piping"
+  ],
+  "Renewable Energy": [
+    "신재생",
+    "재생에너지",
+    "태양광",
+    "solar"
+  ],
+  "Injection Molding Machine": [
+    "사출기",
+    "사출성형기"
+  ],
+  "Extruder": [
+    "압출기"
+  ],
+  "Mill": [
+    "밀",
+    "분쇄기"
+  ],
+  "Mixer & Agitator": [
+    "교반기",
+    "믹서"
+  ],
+  "Dust Collector": [
+    "집진기"
+  ],
+  "Gas Turbine": [
+    "가스터빈"
+  ],
+  "Building": [
+    "건물",
+    "건축"
+  ],
+  "Elevator": [
+    "엘리베이터",
+    "승강기"
+  ],
+  "Tank": [
+    "탱크",
+    "저장조"
+  ],
+  "Scrubber": [
+    "스크러버"
+  ],
+  "Deaerator": [
+    "탈기기"
+  ],
+  "Steam Separator": [
+    "증기분리기"
+  ],
+  "Transmission": [
+    "변속기",
+    "동력전달"
+  ],
+  "Gas Compressor": [
+    "가스압축기"
+  ],
+  "Data Center": [
+    "데이터센터"
+  ],
+  "Heater": [
+    "히터",
+    "가열기"
+  ],
+  "Energy Management System": [
+    "에너지관리시스템",
+    "EMS",
+    "BEMS",
+    "FEMS"
+  ],
+  "Energy Storage System": [
+    "ESS",
+    "에너지저장"
+  ],
+  "UPS": [
+    "UPS",
+    "무정전"
+  ],
+  "Power Factor Correction": [
+    "역률",
+    "역률개선"
+  ],
+  "Peak Control": [
+    "피크",
+    "최대전력"
+  ],
+  "VOC 설비": [
+    "VOC"
+  ],
+  "Column & Reactor": [
+    "반응기",
+    "컬럼"
+  ],
+  "Bag Filter": [
+    "백필터"
+  ],
+  "A/C Outdoor Unit": [
+    "실외기"
+  ],
+  "Air Trap": [
+    "에어트랩",
+    "스팀트랩"
+  ],
+  "Diesel Engine": [
+    "디젤엔진"
+  ],
+  "Ejector": [
+    "이젝터"
+  ],
+  "Electric Heat Pump": [
+    "전기히트펌프"
+  ],
+  "Escalator": [
+    "에스컬레이터"
+  ],
+  "Fog System": [
+    "포그시스템"
+  ],
+  "Fuel Cell": [
+    "연료전지"
+  ],
+  "Heat Pipe": [
+    "히트파이프"
+  ],
+  "Incinerators": [
+    "소각로"
+  ],
+  "LPA Pump": [
+    "LPA펌프"
+  ],
+  "MCC(Motor Control Center)": [
+    "MCC",
+    "모터제어"
+  ],
+  "Belt Press": [
+    "벨트프레스"
+  ],
+  "Computer": [
+    "컴퓨터",
+    "PC"
+  ],
+  "Demand Response 제도": [
+    "DR",
+    "수요반응"
+  ],
+  "Dyeing Machine": [
+    "염색기"
+  ],
+  "Regenerative Thermal Oxidizer": [
+    "RTO",
+    "축열식"
+  ],
+  "Selective Catalytic Reduction": [
+    "SCR",
+    "촉매"
+  ],
+  "Sterilization Room": [
+    "살균실"
+  ],
+  "Sunshade": [
+    "차양",
+    "선세이드"
+  ],
+  "Toilet": [
+    "화장실"
+  ],
+  "Vending Machine": [
+    "자판기"
+  ],
+  "Heat pump": [
+    "히트펌프",
+    "열펌프"
+  ]
+}
